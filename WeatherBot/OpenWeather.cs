@@ -1,17 +1,13 @@
 ﻿using Newtonsoft.Json;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
-using System.Web;
 
 namespace WeatherBot
 {
     public class OpenWeather
     {
-        private const string APIKEY = "[your api key here]";
+        private const string APIKEY = "[your api key]";
 
         public static async Task<CurrentConditions> GetWeatherAsync(string ZipCode)
         {
